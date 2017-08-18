@@ -52,9 +52,11 @@ var TagManager = {
     document.head.appendChild(gtm.script());
 
     var first = document.body.children[0];
+    console.log(first);
     document.body.insertBefore(gtm.noScript(), first
     //document.body.appendChild(gtm.noScript())
-    );
+    );var firstAfter = document.body.children[0];
+    console.log(firstAfter);
   }
 };
 

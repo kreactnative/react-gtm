@@ -37,7 +37,11 @@ const TagManager = {
     })
     if (dataLayer) document.head.appendChild(gtm.dataScript())
     document.head.appendChild(gtm.script())
-    document.body.appendChild(gtm.noScript())
+    
+    
+    var first = document.body.children[0]
+    document.body.insertBefore(gtm.noScript(), first)
+    //document.body.appendChild(gtm.noScript())
   }
 }
 
